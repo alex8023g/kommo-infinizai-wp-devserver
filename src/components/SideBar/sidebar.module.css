@@ -1,0 +1,25 @@
+.sideBar {
+  padding-right: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #57b8ff;
+
+  text-align: right;
+  list-style-position: inside;
+}
+
+.li {
+  margin-bottom: 10px;
+}
+.dpNone {
+  display: none;
+}
+.active {
+  color: #fac422;
+}
+@media (min-width: 992px) {
+  .sideBar {
+    display: none;
+  }
+}

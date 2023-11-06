@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+}
+.amount {
+  position: absolute;
+  top: -7px;
+  right: -19px;
+  width: 20px;
+  color: #141820;
+  text-align: center;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 163.636% */
+  color: #000;
+  background-color: #fff;
+  border-radius: 45%;
+}

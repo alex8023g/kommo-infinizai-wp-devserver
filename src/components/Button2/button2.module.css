@@ -1,0 +1,25 @@
+.btn {
+  padding: 20px 35px 22px 34px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  text-transform: capitalize;
+  background-color: #57b8ff;
+}
+
+@media (max-width: 991px) {
+  .btn {
+    padding: 14px 23px;
+
+    font-size: 12px;
+    line-height: 155.556%;
+  }
+}
+
+@media (max-width: 575px) {
+  .btn {
+    font-size: 10px;
+  }
+}

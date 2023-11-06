@@ -1,0 +1,436 @@
+/* general properties */
+
+body {
+  color: #fff;
+}
+
+.h2 {
+  color: #fff;
+  font-size: 64px;
+
+  line-height: 114%;
+  text-transform: capitalize;
+}
+
+/* end general properties */
+
+/* section-1 ******************************** */
+.section1 {
+  position: relative;
+  padding-top: 210px;
+  padding-bottom: 250px;
+  color: #fff;
+  background: linear-gradient(to right, #000 54.5%, #57b8ff 0%);
+}
+.s1Wrap {
+  position: relative;
+  background-image: url('../../img/bg-sec-1.png');
+  background-repeat: no-repeat;
+  background-position: 660px 50%;
+}
+.futureWrap {
+  display: flex;
+  padding-top: 0px;
+}
+.futureSpan {
+  padding-left: 7px;
+  padding-top: 6px;
+  color: #57b8ff;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.h1 {
+  position: relative;
+  margin-bottom: 45px;
+  padding-top: 15px;
+  max-width: 656px;
+  font-size: 72px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.underline {
+  position: absolute;
+  top: 128px;
+  left: 218px;
+}
+.p1 {
+  margin-bottom: 52px;
+  max-width: 615px;
+  color: #999;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155.556%;
+}
+.ourTeam {
+  padding-left: 41px;
+  font-size: 18px;
+  line-height: 155.556%;
+}
+.socialUl {
+  position: absolute;
+  top: 232px;
+  left: -180px;
+  display: flex;
+  transform: rotate(-90deg);
+}
+
+.socialLi {
+  color: #80858f;
+  font-size: 10px;
+  line-height: 250%;
+  letter-spacing: 0.7px;
+}
+.mr60 {
+  margin-right: 60px;
+}
+.mr50 {
+  margin-right: 50px;
+}
+/* end section-1 ******************************** */
+
+/* section-2 ****************************** */
+
+.section2 {
+  background-color: #2a313c;
+}
+
+.s2Wrap {
+  display: flex;
+}
+
+.s2Empty {
+  flex-grow: 1;
+  font-size: 0;
+}
+
+.s2Content {
+  padding-top: 83px;
+  max-width: 596px;
+}
+.s2h2 {
+  padding-top: 14px;
+  margin-bottom: 39px;
+}
+
+.s2p1 {
+  margin-bottom: 52px;
+  max-width: 561px;
+  color: rgba(223, 223, 223, 0.8);
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 83px;
+  overflow-x: scroll;
+}
+
+.tab {
+  margin-right: 8px;
+  padding: 11px 11px 8px 11px;
+  min-width: 175px;
+  min-height: 104px;
+  border-radius: 20px;
+  background: #2a313c;
+}
+.activeTab {
+  background-color: #3b3d46;
+}
+
+.tab1 {
+  background-image: url('../../img/character-1.png');
+  background-repeat: no-repeat;
+}
+.tab2 {
+  background-image: url('../../img/character-2.png');
+  background-repeat: no-repeat;
+}
+
+.tab3 {
+  height: 100%;
+  background-image: url('../../img/character-3.png');
+  background-repeat: no-repeat;
+}
+.tab4 {
+  height: 100%;
+  background-image: url('../../img/character-4.png');
+  background-repeat: no-repeat;
+}
+/* end section-2 ****************************** */
+
+/* section-3 *************************** */
+
+.section3 {
+  padding-top: 130px;
+  padding-bottom: 125px;
+  background-color: #000;
+}
+
+.s3top {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 63px;
+}
+.s3topLeft {
+  margin-right: auto;
+}
+.s3h2 {
+  padding-top: 14px;
+  margin-bottom: 3px;
+  max-width: 541px;
+}
+
+.s3content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'gamepad gamepad gamer pc'
+    'gamepad gamepad keyboard eva';
+  grid-gap: 24px;
+}
+.gamepad {
+  grid-area: gamepad;
+}
+.gamepadImg {
+  height: 515px;
+  border-radius: 30px;
+  background-image: url('../../img/gamepad.png');
+  background-repeat: no-repeat;
+}
+.gamer {
+  grid-area: gamer;
+}
+
+.gamerImg {
+  padding-top: 204px;
+  border-radius: 20px;
+  background-image: url('../../img/gamer.png');
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+.pc {
+  grid-area: pc;
+}
+.pcImg {
+  padding-top: 204px;
+  border-radius: 20px;
+  background-image: url('../../img/pc.png');
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+.keyboard {
+  grid-area: keyboard;
+}
+.keyboardImg {
+  margin-bottom: 3px;
+  padding-top: 190px;
+  border-radius: 20px;
+  background-image: url('../../img/keyboard.png');
+  background-repeat: no-repeat;
+}
+.eva {
+  grid-area: eva;
+}
+.evaImg {
+  margin-bottom: 3px;
+  padding-top: 190px;
+  border-radius: 20px;
+  background-image: url('../../img/eva.png');
+  background-repeat: no-repeat;
+}
+.datev1 {
+  padding-top: 50px;
+  color: #57b8ff;
+  font-size: 18px;
+
+  line-height: 100%;
+  letter-spacing: 0.5px;
+}
+.datev2 {
+  padding-left: 1px;
+  padding-top: 27px;
+  color: #57b8ff;
+  font-size: 16px;
+
+  line-height: 100%;
+  letter-spacing: 0.4px;
+}
+.h3v1 {
+  padding-top: 30px;
+  color: #fff;
+  font-size: 36px;
+
+  line-height: 127.778%;
+  text-transform: capitalize;
+}
+.h3v2 {
+  margin-bottom: 14px;
+  padding-top: 20px;
+  padding-left: 1px;
+  max-width: 290px;
+  color: #fff;
+  font-size: 23px;
+
+  line-height: 147.826%;
+  text-transform: capitalize;
+}
+/* end section-3 *************************** */
+
+@media (max-width: 991px) {
+  /* general properties */
+  .h2 {
+    font-size: 43px;
+  }
+  /* end general properties */
+
+  /* section-1 *************************** */
+
+  .section1 {
+    padding: 100px 0;
+  }
+  .s1Wrap {
+    background-image: none;
+  }
+  .futureSpan {
+    font-size: 10px;
+  }
+  .h1 {
+    font-size: 48px;
+  }
+  .underline {
+    display: none;
+  }
+  .p1 {
+    font-size: 14px;
+  }
+  .ourTeam {
+    font-size: 12px;
+  }
+
+  /* end section-1 *************************** */
+
+  /* section-2 *************************** */
+
+  .s2p1 {
+    font-size: 14px;
+  }
+
+  /* end section-2 *************************** */
+
+  /* section-3 *************************** */
+  .section3 {
+    padding: 100px 0;
+  }
+  .s3top {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .s3h2 {
+    margin-bottom: 20px;
+  }
+  .s3content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'gamepad gamepad  '
+      'gamepad gamepad  '
+      'gamer pc'
+      'keyboard eva';
+  }
+  .datev1 {
+    font-size: 14px;
+  }
+  .datev2 {
+    font-size: 12px;
+  }
+  .h3v1 {
+    font-size: 24px;
+  }
+  .h3v2 {
+    font-size: 16px;
+  }
+  /* end section-3 *************************** */
+}
+
+@media (max-width: 767px) {
+  .tabs {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  /* general properties */
+  .h2 {
+    font-size: 30px;
+  }
+  /* end general properties */
+  /* section-1 *************************** */
+
+  .section1 {
+    padding: 50px 0;
+  }
+  .h1 {
+    font-size: 32px;
+  }
+  .p1 {
+    font-size: 10px;
+  }
+  .ourTeam {
+    font-size: 10px;
+  }
+
+  /* end section-1 *************************** */
+  /* section-2 *************************** */
+
+  .s2p1 {
+    font-size: 10px;
+  }
+
+  /* end section-2 *************************** */
+  /* section-3 *************************** */
+  .section3 {
+    padding: 50px 0;
+  }
+  .s3content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'gamepad'
+      'gamer'
+      'pc'
+      'keyboard'
+      'eva';
+    justify-content: center;
+  }
+  .gamepadImg {
+    height: 300px;
+  }
+  .gamerImg,
+  .pcImg,
+  .keyboardImg,
+  .evaImg {
+    background-size: cover;
+  }
+  .datev1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+  }
+  .datev2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+  }
+  .h3v1 {
+    padding-top: 5px;
+    font-size: 16px;
+  }
+  .h3v2 {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  /* end section-3 *************************** */
+}
