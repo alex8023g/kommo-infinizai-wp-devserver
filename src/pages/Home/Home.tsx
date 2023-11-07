@@ -9,10 +9,9 @@ import { Link } from 'react-router-dom';
 import cx from 'classnames';
 import { SideBar } from '../../components/SideBar';
 import { menuData } from '../../App';
-// import imgCharMin1 from '../../img/1.png';
-// import imgCharMin1 from '../../img/char-min-1.png';
-// import imgCharMin2 from '../../img/char-min-2.png';
-// import imgCharMin3 from '../../img/char-min-3.png';
+import imgCharMin1 from '../../img/char-min-1.png';
+import imgCharMin2 from '../../img/char-min-2.png';
+import imgCharMin3 from '../../img/char-min-3.png';
 // import imgCharMin4 from '../../img/char-min-4.png';
 // import imgChar1 from '../../img/character-1.png';
 // import imgChar2 from '../../img/character-2.png';
@@ -27,9 +26,9 @@ import { nanoid } from 'nanoid';
 import { Footer } from '../../components/Footer';
 
 const tabData = [
-  { id: '', src: '../../../img/char-min-1.png' },
-  { id: '', src: '/img/char-min-2.png' },
-  { id: '', src: '/img/char-min-3.png' },
+  { id: '', src: imgCharMin1 },
+  { id: '', src: imgCharMin2 },
+  { id: '', src: imgCharMin3 },
   // { id: '', src: '/img/char-min-1.png' },
 ].map((item) => ({ ...item, id: nanoid() }));
 

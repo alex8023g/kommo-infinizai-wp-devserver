@@ -18,6 +18,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
     publicPath: '/',
+    assetModuleFilename: path.join('img', '[contenthash][ext]'),
   },
   module: {
     rules: [
@@ -49,12 +50,15 @@ module.exports = {
       {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
-        // use: ['file-loader'],
       },
+      // {
+      //   test: /\.png$/i,
+      //   include: '/img/',
+      //   use: [{ loader: 'file-loader', options: { outputPath: '/img/' } }],
+      // },
       {
-        test: /\.png$/,
-        include: '/img/',
-        use: [{ loader: 'file-loader', options: { outputPath: '/img/' } }],
+        test: /\.png$/i,
+        type: 'asset/resource',
       },
     ],
   },
