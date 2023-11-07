@@ -2,6 +2,7 @@ const path = require('path');
 const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -68,6 +69,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: './index.html',
       template: './public/index.html',
+      // favicon: './public/img/favicon.svg',
+    }),
+    new FaviconsWebpackPlugin({
+      logo: './public/img/favicon.svg',
     }),
   ].filter(Boolean),
   resolve: {
