@@ -10,15 +10,16 @@ import { Button1 } from '../Button1';
 import { ShoppingCart } from '../ShoppingCart';
 import { nanoid } from 'nanoid';
 import { MenuData } from '../../App';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { SideBar } from '../SideBar';
 
-interface Props {
+export interface HeaderProps {
   menuData: MenuData[];
   isSBOpen: boolean;
   setIsSBOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
+export function Header({ menuData, isSBOpen, setIsSBOpen }: HeaderProps) {
   return (
     <header className={styles.header}>
       <Layout>
@@ -33,7 +34,12 @@ export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
                 className={cx(styles.menuA, { [styles.active]: item.isActive })}
                 key={item.id}
               >
-                <Link to={item.href}>{item.name}</Link>
+                <NavLink
+                  to={item.href}
+                  className={({ isActive }) => (isActive ? styles.active : '')}
+                >
+                  {item.name}
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -53,6 +59,7 @@ export function Header({ menuData, isSBOpen, setIsSBOpen }: Props) {
           </button>
         </div>
       </Layout>
+      <SideBar isSBOpen={isSBOpen} menuData={menuData} />
     </header>
   );
 }

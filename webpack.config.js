@@ -27,7 +27,7 @@ module.exports = {
         use: 'babel-loader',
       },
       {
-        test: /\.css$/,
+        test: /\.module\.css$/,
         use: [
           'style-loader',
           {
@@ -40,10 +40,10 @@ module.exports = {
             },
           },
         ],
-        exclude: /\.global\.css$/,
+        // exclude: /global\.css$/,
       },
       {
-        test: /\.global\.css/,
+        test: /global\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {

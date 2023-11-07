@@ -1,12 +1,13 @@
 .sideBar {
   padding-right: 30px;
   position: absolute;
-  top: 0;
+  top: 10;
   right: 0;
   background-color: #57b8ff;
 
   text-align: right;
   list-style-position: inside;
+  z-index: 100;
 }
 
 .li {

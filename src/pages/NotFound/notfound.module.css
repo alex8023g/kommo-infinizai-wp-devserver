@@ -1,0 +1,10 @@
+.h2 {
+  /* color: red; */
+}
+.section1 {
+  position: relative;
+  padding-top: 210px;
+  padding-bottom: 250px;
+  color: #fff;
+  background: linear-gradient(to right, #000 54.5%, #57b8ff 0%);
+}

@@ -1,4 +1,5 @@
 .header {
+  /* position: relative; */
   padding-top: 20px;
   color: #fff;
   background: linear-gradient(to right, #000 54.5%, #57b8ff 0%);
@@ -35,6 +36,9 @@
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.5px;
 }
+/* .menuA a.active {
+  color: red;
+} */
 .active {
   color: #fac422;
 }
