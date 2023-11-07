@@ -68,7 +68,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: './index.html',
       template: './public/index.html',
-      favicon: './public/img/favicon.svg',
     }),
   ].filter(Boolean),
   resolve: {

@@ -1,8 +1,4 @@
-/* @font-face {
-  font-family: 'Orbitron';
-  src: local('Orbitron'), url('../src/fonts/Orbitron.ttf') format('ttf');
-  font-style: normal;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 body {
   margin: 0;
