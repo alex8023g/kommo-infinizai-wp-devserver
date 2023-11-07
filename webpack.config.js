@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.png$/,
-        include: '/img',
+        include: '/img/',
         use: { loader: 'file-loader', options: { outputPath: '/img/' } },
       },
     ],

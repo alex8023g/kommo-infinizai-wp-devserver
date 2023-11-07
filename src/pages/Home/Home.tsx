@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import cx from 'classnames';
 import { SideBar } from '../../components/SideBar';
 import { menuData } from '../../App';
+// import imgCharMin1 from '../../img/1.png';
 // import imgCharMin1 from '../../img/char-min-1.png';
 // import imgCharMin2 from '../../img/char-min-2.png';
 // import imgCharMin3 from '../../img/char-min-3.png';
@@ -26,7 +27,7 @@ import { nanoid } from 'nanoid';
 import { Footer } from '../../components/Footer';
 
 const tabData = [
-  { id: '', src: '/img/char-min-1.png' },
+  { id: '', src: '../../../img/char-min-1.png' },
   { id: '', src: '/img/char-min-2.png' },
   { id: '', src: '/img/char-min-3.png' },
   // { id: '', src: '/img/char-min-1.png' },
