@@ -2,7 +2,6 @@ const path = require('path');
 const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const WebpackFavicons = require('webpack-favicons');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
@@ -43,7 +42,6 @@ module.exports = {
             },
           },
         ],
-        // exclude: /global\.css$/,
       },
       {
         test: /global\.css$/,
@@ -53,11 +51,6 @@ module.exports = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
-      // {
-      //   test: /\.png$/i,
-      //   include: '/img/',
-      //   use: [{ loader: 'file-loader', options: { outputPath: '/img/' } }],
-      // },
       {
         test: /\.png$/i,
         type: 'asset/resource',
@@ -70,15 +63,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: './index.html',
       template: './public/index.html',
-      // favicon: './public/img/favicon.svg',
     }),
-    // new FaviconsWebpackPlugin({
-    //   logo: './src/img/favicon.png',
-    //   inject: true,
-    // }),
     new WebpackFavicons({
       src: './src/img/favicon.svg',
-      // src: './src/img/maskicon.svg',
       path: 'img',
       // background: '#fff',
       // theme_color: '#57B8FF',
