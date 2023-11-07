@@ -3,6 +3,7 @@ const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const WebpackFavicons = require('webpack-favicons');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -71,8 +72,20 @@ module.exports = {
       template: './public/index.html',
       // favicon: './public/img/favicon.svg',
     }),
-    new FaviconsWebpackPlugin({
-      logo: './public/img/favicon.svg',
+    // new FaviconsWebpackPlugin({
+    //   logo: './src/img/favicon.png',
+    //   inject: true,
+    // }),
+    new WebpackFavicons({
+      src: './src/img/maskicon.svg',
+      path: 'img',
+      background: '#fff',
+      theme_color: '#57B8FF',
+      icons: {
+        favicons: true,
+        appleIcon: { offset: '#57B8FF', background: '#57B8FF' },
+        appleStartup: true,
+      },
     }),
   ].filter(Boolean),
   resolve: {
