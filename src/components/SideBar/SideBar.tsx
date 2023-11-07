@@ -6,17 +6,20 @@ import { Link, NavLink } from 'react-router-dom';
 
 interface Props {
   isSBOpen: boolean;
+  setIsSBOpen: (st: boolean) => void;
   menuData: MenuData[];
 }
 
-export function SideBar({ isSBOpen, menuData }: Props) {
+export function SideBar({ isSBOpen, setIsSBOpen, menuData }: Props) {
   return (
     <ul className={cx(styles.sideBar, { [styles.dpNone]: !isSBOpen })}>
       {menuData.map((item) => (
         <li
           key={item.id}
           className={styles.li}
-          // onClick={()=>}
+          onClick={() => {
+            setIsSBOpen(false);
+          }}
         >
           <NavLink
             to={item.href}

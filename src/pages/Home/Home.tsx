@@ -27,16 +27,16 @@ import { Footer } from '../../components/Footer';
 
 const tabData = [
   { id: '', src: '/img/char-min-1.png' },
-  { id: '', src: '/img/char-min-1.png' },
-  { id: '', src: '/img/char-min-1.png' },
-  { id: '', src: '/img/char-min-1.png' },
+  { id: '', src: '/img/char-min-2.png' },
+  { id: '', src: '/img/char-min-3.png' },
+  // { id: '', src: '/img/char-min-1.png' },
 ].map((item) => ({ ...item, id: nanoid() }));
 
 // const chars = [imgChar1, imgChar2, imgChar3, imgChar4];
 const chars2 = ['tab1', 'tab2', 'tab3', 'tab4'];
 
 export function Home() {
-// { isSBOpen }: { isSBOpen: boolean }
+  // { isSBOpen }: { isSBOpen: boolean }
   // const [isSBOpen, setIsSBOpen] = useState(false);
   const [activeChar, setActiveChar] = useState(0);
   const homeMData = menuData.map((item) =>

@@ -125,7 +125,7 @@ body {
 .tabs {
   display: flex;
   margin-bottom: 83px;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 .tab {

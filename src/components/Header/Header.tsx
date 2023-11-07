@@ -59,7 +59,7 @@ export function Header({ menuData, isSBOpen, setIsSBOpen }: HeaderProps) {
           </button>
         </div>
       </Layout>
-      <SideBar isSBOpen={isSBOpen} menuData={menuData} />
+      <SideBar isSBOpen={isSBOpen} setIsSBOpen={setIsSBOpen} menuData={menuData} />
     </header>
   );
 }
